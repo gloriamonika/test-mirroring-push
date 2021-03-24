@@ -1,0 +1,19 @@
+{block:RebloggedFrom}
+{block:Reblogs}
+    <div class="reblogheader">
+            {block:IsActive}
+            <div class="avatar"><img src="{PortraitURL-64}"/></div>
+            <a href="{Permalink}">{Username}</a> 
+            {/block:IsActive}
+ 
+            {block:IsDeactivated}
+            <div class="avatar"><img src="{PortraitURL-64}"/></div>
+            <strike>{Username}</strike>
+            {/block:IsDeactivated}
+    </div>
+
+    {block:Text}{block:Photo}{block:Photoset}{block:Video}{block:Link}{block:Audio}{block:Answer}
+    <div class="cap">{Body}</div>
+    {/block:Answer}{/block:Audio}{/block:Link}{/block:Video}{/block:Photoset}{/block:Photo}{/block:Text}
+{/block:Reblogs}
+{/block:RebloggedFrom}
